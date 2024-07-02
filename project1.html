@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Feedback Form</title>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='/project1.css'>
+  </head>
+  <body>
+    <h1 id='title'>Minecrafters' Feedback</h1>
+    <p id='description'>Hey Minecrafter! We would like to hear from you about your favourite game - <a href = 'https://minecraft.net/en-us' target="_blank">Minecraft</a>.</p>
+    <form method='post' action='https://minecraftfeedback.net' id='survey-form'>
+      <fieldset class="first">
+        <legend>Player Info</legend>
+        <label id='name-label'>What's your name? <input type='text' required id='name' placeholder='Steve'> </label>
+        <label id='email-label'>Enter your registered E-mail <input type='email' required id='email' placeholder='alex@gmail.com'> </label>
+        <label id='number-label'>How old are you? (years) <input type='number' min='7' max='150' required id='number' placeholder='18'> </label>
+      </fieldset>
+      <fieldset>
+        <legend>About the game</legend>
+        <label class="last">On which device do your play? 
+          <select id='dropdown'>
+            <option value=''>(select one)</option>
+            <option value='1'>PC/Laptop</option>
+            <option value='2'>Mobile Phone</option>
+            <option value='3'>Console</option>
+          </select>
+        </label>
+        <label class="subtitle">Which edition of Minecraft you like the most?</label>
+        <label><input type='radio' name='edition' checked value='I'> Minecraft Java Edition</label>
+        <label class="last"><input type='radio' name='edition' value='II'> Minecraft Bedrock Edition</label>
+        
+        <label class="subtitle">How do you like to play Minecraft? (check all that apply)</label>
+        <label><input type='checkbox' value='A'>SMP/Survival/Hardcore World (beating the game)</label>
+        <label><input type='checkbox' value='B'>Creative World (Building structures/Redstone stuffs)</label>
+        <label class="last"><input type='checkbox' value='C'>Minigames in servers (Like Bedwars, Skywars, etc,.)</label>
+        <label>Any experience you would like to share or any suggestion that help us improve?</label>
+        <textarea></textarea>
+      </fieldset>
+      <input type='submit' value='Submit' id='submit'>
+    </form>
+  </body>
+</html>
